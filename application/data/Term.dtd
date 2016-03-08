@@ -8,15 +8,15 @@ Derrick
 
 <!-- The term defines the dayOfWeek, period, course  -->
 <!ELEMENT WinterTerm (dayOfWeek, period, course, instructor, room)>
-<!ELEMENT course (#PCDATA)>
-<!ATTLIST course number (4620|4650|4660|4770|4850|4910) #REQUIRED  >
-<!ELEMENT room (#PCDATA)>
-<!-- Periods can begin at 8:30, 9:30, 10:30, 11:30, 12:30, 13:30, 14:30, 15:30, 16:30  -->
-<!ELEMENT period (#PCDATA)>
-<!ATTLIST period time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED  >
 <!ELEMENT dayOfWeek (#PCDATA)>
 <!-- Days for classes are monday, tuesday, wednesday, thursday, or friday -->
 <!ATTLIST dayOfWeek day (mon|tues|weds|thurs|fri) #REQUIRED  >
+<!ELEMENT period (#PCDATA)>
+<!ATTLIST period time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED  >
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST course number (4620|4650|4660|4770|4850|4910) #REQUIRED  >
 <!ELEMENT instructor (#PCDATA)>
+<!ELEMENT room (#PCDATA)>
+<!-- Periods can begin at 8:30, 9:30, 10:30, 11:30, 12:30, 13:30, 14:30, 15:30, 16:30  -->
 
 

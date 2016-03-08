@@ -8,84 +8,68 @@ and open the template in the editor.
 <!DOCTYPE WinterTerm SYSTEM 'Term.dtd'>
 
 <WinterTerm>
-    <dayOfWeek day="monday">
-        <period time="10:30">
-            <course number="4650">
-                <room>SE12-306</room>
+    <dayOfWeek day="mon"/>
+        <period time="1030"/>
+            <course number="4650"/>
                 <instructor>Medhat Elmasry</instructor>
-            </course>        
-        </period>
-        <period time="15:30">
-            <course number="4910">
-                <room>SW9-206</room>
+                <room>SE12-306</room>
+
+        <period time="1530"/>
+            <course number="4910"/>
                 <instructor>Richard Chau</instructor>
-            </course>        
-        </period>
-        <period time="16:30">
-            <course number="4650">
+                <room>SW9-206</room>
+           
+        <period time="1630"/>
+            <course number="4650"/>
+                <instructor>Medhat Elmasry</instructor>
                 <room>SE6-205</room>
-                <instructor>Medhat Elmasry</instructor>
-            </course>        
-        </period>
-    </dayOfWeek>
-    <dayOfWeek day="tuesday">
-        <period time="8:30">
-            <course number="4620">
-                <room>SE12-306</room>
+           
+    <dayOfWeek day="tues"/>
+        <period time="830"/>
+            <course number="4620"/>
                 <instructor>Bethany Edmunds</instructor>
-            </course>        
-        </period>
-        <period time="12:30">
-            <course number="4650">
-                <room>SW9-206</room>
+                <room>SE12-306</room>
+           
+        <period time="1230"/>
+            <course number="4650"/>
                 <instructor>Medhat Elmasry</instructor>
-            </course>        
-        </period>
-        <period time="15:30">
-            <course number="4620">
+                <room>SW9-206</room>
+           
+        <period time="1530"/>
+            <course number="4620"/>
+                <instructor>Bethany Edmunds</instructor>
                 <room>SW3-3615</room>
-                <instructor>Bethany Edmunds</instructor>
-            </course>        
-        </period>
-    </dayOfWeek>
-    <dayOfWeek day="thursday">
-        <period time="9:30">
-            <course number="4910">
+           
+    <dayOfWeek day="thurs"/>
+        <period time="930"/>
+            <course number="4910"/>
+                <instructor>Richard Chau</instructor>
                 <room>SW5-1840</room>
+            
+        <period time="1030"/>
+            <course number="4910"/>
                 <instructor>Richard Chau</instructor>
-            </course>        
-        </period>
-        <period time="10:30">
-            <course number="4910">
                 <room>SE12-306</room>
-                <instructor>Richard Chau</instructor>
-            </course>        
-        </period>
-        <period time="13:30">
-            <course number="4850">
-                <room>SE12-308</room>
+           
+        <period time="1330"/>
+            <course number="4850"/>  
                 <instructor>James Parry</instructor>
-            </course>        
-        </period>
-    </dayOfWeek>
-    <dayOfWeek day="friday">
-        <period time="8:30">
-            <course number="4660">
+                <room>SE12-308</room>
+            
+    <dayOfWeek day="fri"/>
+        <period time="830"/>
+            <course number="4660"/>
+                <instructor>Steve Fabiszewski</instructor>
                 <room>SW9-206</room>
-                <instructor>Steve Fabiszewski</instructor>
-            </course>        
-        </period>
-        <period time="10:30">
-            <course number="4770">
-                <room>SE12_306</room>
+           
+        <period time="1030"/>
+            <course number="4770"/>
                 <instructor>Trevor Lord</instructor>
-            </course>        
-        </period>
-        <period time="13:30">
-            <course number="4660">
-                <room>SE12-306</room>
+                <room>SE12_306</room>
+           
+        <period time="1330"/>
+            <course number="4660"/>
                 <instructor>Steve Fabiszewski</instructor>
-            </course>        
-        </period>
-    </dayOfWeek>
+                <room>SE12-306</room>
+        
 </WinterTerm>
