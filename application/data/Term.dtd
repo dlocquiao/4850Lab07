@@ -3,20 +3,42 @@
 Vithusan
 Derrick
 -->
-
+<!-- time a class starts   -->
+<!ELEMENT start (#PCDATA)>
+<!-- time a class ends   -->
+<!ELEMENT end (#PCDATA)>
+<!-- day of the class   -->
+<!ELEMENT daySlot (#PCDATA)>
+<!-- name of the course   -->
+<!ELEMENT courseName (#PCDATA)>
+<!-- instructors name   -->
+<!ELEMENT instructor (#PCDATA)>
+<!-- location of the class   -->
+<!ELEMENT room (#PCDATA)>
 
 
 <!-- The term defines the dayOfWeek, period, course  -->
-<!ELEMENT WinterTerm (dayOfWeek, period, course, instructor, room)>
-<!ELEMENT dayOfWeek (#PCDATA)>
-<!-- Days for classes are monday, tuesday, wednesday, thursday, or friday -->
-<!ATTLIST dayOfWeek day (mon|tues|weds|thurs|fri) #REQUIRED  >
-<!ELEMENT period (#PCDATA)>
-<!ATTLIST period time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED  >
-<!ELEMENT course (#PCDATA)>
-<!ATTLIST course number (4620|4650|4660|4770|4850|4910) #REQUIRED  >
-<!ELEMENT instructor (#PCDATA)>
-<!ELEMENT room (#PCDATA)>
-<!-- Periods can begin at 8:30, 9:30, 10:30, 11:30, 12:30, 13:30, 14:30, 15:30, 16:30  -->
+<!-- **DayOfWeek   -->
+<!ELEMENT WinterTerm (dayOfWeek, period, course)>
+<!-- Days for classes are only monday, tuesday, wednesday, thursday, or friday -->
+<!ELEMENT dayOfWeek (day)*>
+<!-- each day contains a booked spot for a certain course -->
+<!ELEMENT day (daBook)*>
+<!ATTLIST day weekday (mon|tues|weds|thurs|fri) #REQUIRED  >
+<!-- each booked spot has a start, end, course name, room, and instructor -->
+<!ELEMENT daBook (start, end, courseName, room, instructor) >
+<!-- **Period   -->
+<!ELEMENT period (timeslot)*>
+<!ELEMENT timeslot (peBook)*>
+<!ATTLIST timeslot duration CDATA #REQUIRED start CDATA #REQUIRED end CDATA #REQUIRED  >
+<!ELEMENT peBook (courseName, room, instructor, daySlot)>
+<!-- **Course   -->
+<!ELEMENT course (class)*>
+<!ELEMENT class (coBook)*>
+<!ATTLIST class name CDATA #REQUIRED id CDATA #REQUIRED >
+<!ELEMENT coBook (start,end,room,instructor,daySlot)>
+<!-- type of class booked   -->
+<!ATTLIST coBook type (Tutorial|Lab|Lecture) #REQUIRED  >
+
 
 
