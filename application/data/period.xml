@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE period SYSTEM 'Term.dtd'>
+
+<period>
+<timeslot duration="2" start="830" end="1020">
+    <peBook>
+        
+        <courseName>Enterprise Systems Admin Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Bethany Edmunds</instructor>
+        <daySlot>Tuesday</daySlot>
+            </peBook>
+             <peBook> 
+        
+        <courseName>Intro to Business Intelligence Lecture</courseName>
+        <room>SW9-206</room>
+        <instructor>Steve Fabiszewski</instructor>
+        <daySlot>Friday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="1" start="930" end="1020">
+    <peBook>
+        
+        <courseName>Database Backup, Recover, Tuning Lecture</courseName>
+        <room>SW5-1750</room>
+        <instructor>Richard Chau</instructor>
+        <daySlot>Thursday</daySlot>
+    </peBook>
+    </timeslot> 
+    
+    <timeslot duration="2" start="1030" end="1220"> 
+    <peBook> 
+        
+        <courseName>Content Management Systems Admin Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Medhat Elmasry</instructor>
+        <daySlot>Monday</daySlot>
+          </peBook>
+            <peBook>
+        
+        <courseName>Database Backup, Recover, Tuning Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Richard Chau</instructor>
+        <daySlot>Thursday</daySlot>
+          </peBook>
+            <peBook>
+        
+        <courseName>Intro to Business Intelligence Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Steve Fabiszewski</instructor>
+        <daySlot>Friday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="1" start="1230" end="1320"> 
+    <peBook>
+        
+        <courseName>Enterprise Systems Admin Lecture</courseName>
+        <room>SW1-2009</room>
+        <instructor>Bethany Edmunds</instructor>
+        <daySlot>Monday</daySlot>
+          </peBook>
+            <peBook>
+        
+        <courseName>Content Management Systems Admin Lecture</courseName>
+        <room>SW9-206</room>
+        <instructor>Medhat Elmasry</instructor>
+        <daySlot>Tuesday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="2" start="1230" end="1420"> 
+    <peBook>
+        
+        <courseName>Integrative Programming and Technologies Lecture</courseName>
+        <room>SW3-1750</room>
+        <instructor>James Parry</instructor>
+        <daySlot>Wednesday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="2" start="1330" end="1520"> 
+    <peBook> 
+        
+        <courseName>Integrative Programming and Technologies Lab</courseName>
+        <room>SE12-308</room>
+        <instructor>James Parry</instructor>
+        <daySlot>Thursday</daySlot>
+      </peBook>
+        <peBook>
+        
+        <courseName>Legal and Ethical Issues in IT</courseName>
+        <room>SE12-306</room>
+        <instructor>Trevor Lord</instructor>
+        <daySlot>Friday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="1" start="1530" end="1620"> 
+    <peBook>
+        
+        <courseName>Database Backup, Recovery, Tuning Lecture</courseName>
+        <room>SW9-206</room>
+        <instructor>Richard Chau</instructor>
+        <daySlot>Monday</daySlot>
+      </peBook>
+        <peBook>
+        
+        <courseName>Enterprise Systems Admin Lecture</courseName>
+        <room>SW3-3615</room>
+        <instructor>Bethany Edmunds</instructor>
+        <daySlot>Tuesday</daySlot>
+    </peBook>
+    </timeslot>
+    <timeslot duration="1" start="1630" end="1720"> 
+    <peBook>
+        
+        <courseName>Content Management Systems Admin Lecture</courseName>
+        <room>SE6-205</room>
+        <instructor>Medhat Elmasry</instructor>
+        <daySlot>Monday</daySlot>
+    </peBook>
+    </timeslot>    
+</period>
