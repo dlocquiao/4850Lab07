@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE dayOfWeek SYSTEM 'Term.dtd'>
+
+<dayOfWeek>
+   <day weekday="mon">
+        <daBook>
+            <start>1030</start>
+            <end>1220</end>
+            <courseName>Content Management Systems Admin Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Medhat Elmasry</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1530</start>
+            <end>1620</end>
+            <courseName>Database Recovery and Tuning Lecture</courseName>
+            <room>SW9-206</room>
+            <instructor>Richard Chau</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1630</start>
+            <end>1720</end>
+            <courseName>Content Mananagement Systems Admin Lecture</courseName>
+            <room>SE6-205</room>
+            <instructor>Medhat Elmasry</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="tues">
+        <daBook>
+            <start>830</start>
+            <end>1020</end>
+            <courseName>Enterprise Systems Admin Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Bethany Edmunds</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1230</start>
+            <end>1320</end>
+            <courseName>Content Management Systems Admin Lecture</courseName>
+            <room>SW9-206</room>
+            <instructor>Medhat Elmasry</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1530</start>
+            <end>1720</end>
+            <courseName>Enterprise Systems Admin Lecture</courseName>
+            <room>SW3-3615</room>
+            <instructor>Bethany Edmunds</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="weds">
+        <daBook>
+            <start>1230</start>
+            <end>1420</end>
+            <courseName>Integrative Programming and Technologies Lecture</courseName>
+            <room>SW3-1750</room>
+            <instructor>James Parry</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="thurs">
+        <daBook>
+            <start>930</start>
+            <end>1020</end>
+            <courseName>Database Backup, Recovery and Tuning Lecture</courseName>
+            <room>SW5-1840</room>
+            <instructor>Richard Chau</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1030</start>
+            <end>1220</end>
+            <courseName>Database Backup, Recovery and Tuning Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Richard Chau</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1330</start>
+            <end>1520</end>
+            <courseName>Integrative Programming and Technologies Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>James Parry</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="fri">
+        <daBook>
+            <start>830</start>
+            <end>1020</end>
+            <courseName>Intro to Business Intelligence Lecture</courseName>
+            <room>SW9-206</room>
+            <instructor>Steve Fabiszewski</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1030</start>
+            <end>1220</end>
+            <courseName>Intro to Business Intelligence Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Steve Fabiszewski</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1330</start>
+            <end>1520</end>
+            <courseName>Legal and Ethical Issues in IT</courseName>
+            <room>SE12-306</room>
+            <instructor>Trevor Lord</instructor>
+        </daBook>
+    </day> 
+</dayOfWeek>
