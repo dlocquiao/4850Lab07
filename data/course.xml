@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE course SYSTEM 'Term.dtd'>
+
+<course>
+    <class id="ACIT4620" name="Enterprise Systems Administration">
+        <coBook type="Lecture">
+            
+            <start>1230</start>
+            <end>1320</end>
+            <room>SW1-2009</room>
+            <instructor>Bethany Edmunds</instructor>
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>0830</start>
+            <end>1020</end>
+            <room>SE12-306</room>
+            <instructor>Bethany Edmunds</instructor>
+            <daySlot>Tuesday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>1530</start>
+            <end>1620</end>
+            <room>SW3-3615</room>
+            <instructor>Bethany Edmunds</instructor>
+            <daySlot>Tuesday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4650" name="Collaboration and Content Management Systems Administration">
+        <coBook type="Lab">
+            
+            <start>1030</start>
+            <end>1220</end>
+            <room>SE12-306</room>
+            <instructor>Medhat Elmasry</instructor> 
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>1630</start>
+            <end>1720</end>
+            <room>SE6-205</room>
+            <instructor>Medhat Elmasry</instructor>
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>1230</start>
+            <end>1320</end>
+            <room>SW9-206</room>
+            <instructor>Medhat Elmasry</instructor>
+            <daySlot>Tuesday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4660" name="Introduction to Business Intelligence">
+        <coBook type="Lecture">
+            
+            <start>0830</start>
+            <end>1020</end>
+            <room>SW9-206</room>
+            <instructor>Stephen Fabiszewski</instructor>
+            <daySlot>Friday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>1030</start>
+            <end>1220</end>
+            <room>SE12-306</room>
+            <instructor>Stephen Fabiszewski</instructor>
+            <daySlot>Friday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4770" name="Legal and Ethical Issues in IT">
+        <coBook type="Tutorial">
+            
+            <start>1330</start>
+            <end>1520</end>
+            <room>SE12-306</room>
+            <instructor>Trevor Lord</instructor>
+            <daySlot>Friday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4850" name="Integrative Programming and Technologies">
+        <coBook type="Lecture">
+            
+            <start>1230</start>
+            <end>1420</end>
+            <room>SW3-1750</room>
+            <instructor>James Parry</instructor>
+            <daySlot>Wednesday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>1330</start>
+            <end>1520</end>
+            <room>SE12-308</room>
+            <instructor>James Parry</instructor>
+            <daySlot>Thursday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4910" name="Database Backup, Recovery and Tuning">
+        <coBook type="Lecture">
+            
+            <start>1530</start>
+            <end>1620</end>
+            <room>SW9-206</room>
+            <instructor>Richard Chau</instructor>
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>0930</start>
+            <end>1020</end>
+            <room>SW5-1840</room>
+            <instructor>Richard Chau</instructor>
+            <daySlot>Thursday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>1030</start>
+            <end>1220</end>
+            <room>SE12-306</room>
+            <instructor>Richard Chau</instructor>
+            <daySlot>Thursday</daySlot>
+        </coBook>
+    </class>
+</course>
