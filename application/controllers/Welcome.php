@@ -20,11 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('day');
-                $this->load->view('period');
-                $this->load->view('course');
+		
                 
-                $this->data['pagebody'] = 'home';
+                $this->data['pagebody'] = 'welcome_message';
         $this->render();
 	}
 }
