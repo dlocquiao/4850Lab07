@@ -6,7 +6,7 @@ Schema for the Winter Term
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
-</xs:schema>
+
 
 
     <!-- *******Common Data Types******* -->
@@ -113,7 +113,7 @@ Schema for the Winter Term
     <!-- dayOfWeek is the root of day, which contains weekdays-->
     <xs:complexType name="daysType">
         <xs:sequence>
-            <xs:element name="day" type="dayType" micOccurs="0" maxOccurs="5"/>
+            <xs:element name="day" type="dayType" minOccurs="0" maxOccurs="5"/>
         </xs:sequence>
     </xs:complexType>
     
@@ -187,3 +187,6 @@ Schema for the Winter Term
             <xs:element name="daySlot" type="daySlotTy" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
+    
+    
+    </xs:schema>
