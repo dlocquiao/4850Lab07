@@ -9,12 +9,7 @@ Schema for the Winter Term
 </xs:schema>
 
 
-<!-- .......................................................................
-    ..  Common Data Types
-    ........................................................................ -->
-    
-    <!-- A day code, which defines which day of the week its parent slot occurs 
-            on.............................................................. -->
+
     <xs:simpleType name="dayCodeType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="mon"/>
@@ -25,4 +20,4 @@ Schema for the Winter Term
         </xs:restriction>
     </xs:simpleType>
     
-    
+   
