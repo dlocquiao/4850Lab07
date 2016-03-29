@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- -->
+<Term
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Term.xsd">
+
+<!-- 
+Timetable grouped by day of the week
+-->
+<dayOfWeek>
+   <day weekday="mon">
+        <daBook>
+            <start>1030</start>
+            <end>1220</end>
+            <courseName>Content Management Systems Admin Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Medhat Elmasry</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1530</start>
+            <end>1620</end>
+            <courseName>Database Recovery and Tuning Lecture</courseName>
+            <room>SW9-206</room>
+            <instructor>Richard Chau</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1630</start>
+            <end>1720</end>
+            <courseName>Content Mananagement Systems Admin Lecture</courseName>
+            <room>SE6-205</room>
+            <instructor>Medhat Elmasry</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="tues">
+        <daBook>
+            <start>830</start>
+            <end>1020</end>
+            <courseName>Enterprise Systems Admin Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Bethany Edmunds</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1230</start>
+            <end>1320</end>
+            <courseName>Content Management Systems Admin Lecture</courseName>
+            <room>SW9-206</room>
+            <instructor>Medhat Elmasry</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1530</start>
+            <end>1720</end>
+            <courseName>Enterprise Systems Admin Lecture</courseName>
+            <room>SW3-3615</room>
+            <instructor>Bethany Edmunds</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="weds">
+        <daBook>
+            <start>1230</start>
+            <end>1420</end>
+            <courseName>Integrative Programming and Technologies Lecture</courseName>
+            <room>SW3-1750</room>
+            <instructor>James Parry</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="thurs">
+        <daBook>
+            <start>930</start>
+            <end>1020</end>
+            <courseName>Database Backup, Recovery and Tuning Lecture</courseName>
+            <room>SW5-1840</room>
+            <instructor>Richard Chau</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1030</start>
+            <end>1220</end>
+            <courseName>Database Backup, Recovery and Tuning Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Richard Chau</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1330</start>
+            <end>1520</end>
+            <courseName>Integrative Programming and Technologies Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>James Parry</instructor>
+        </daBook>
+    </day>
+    
+    <day weekday="fri">
+        <daBook>
+            <start>830</start>
+            <end>1020</end>
+            <courseName>Intro to Business Intelligence Lecture</courseName>
+            <room>SW9-206</room>
+            <instructor>Steve Fabiszewski</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1030</start>
+            <end>1220</end>
+            <courseName>Intro to Business Intelligence Lab</courseName>
+            <room>SE12-306</room>
+            <instructor>Steve Fabiszewski</instructor>
+        </daBook>
+        
+        <daBook>
+            <start>1330</start>
+            <end>1520</end>
+            <courseName>Legal and Ethical Issues in IT</courseName>
+            <room>SE12-306</room>
+            <instructor>Trevor Lord</instructor>
+        </daBook>
+    </day> 
+</dayOfWeek>
+
+<!-- 
+Term grouped by course
+-->
+<course>
+    <class id="ACIT4620" name="Enterprise Systems Administration">
+        <coBook type="Lecture">
+            
+            <start>1230</start>
+            <end>1320</end>
+            <room>SW1-2009</room>
+            <instructor>Bethany Edmunds</instructor>
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>0830</start>
+            <end>1020</end>
+            <room>SE12-306</room>
+            <instructor>Bethany Edmunds</instructor>
+            <daySlot>Tuesday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>1530</start>
+            <end>1620</end>
+            <room>SW3-3615</room>
+            <instructor>Bethany Edmunds</instructor>
+            <daySlot>Tuesday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4650" name="Collaboration and Content Management Systems Administration">
+        <coBook type="Lab">
+            
+            <start>1030</start>
+            <end>1220</end>
+            <room>SE12-306</room>
+            <instructor>Medhat Elmasry</instructor> 
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>1630</start>
+            <end>1720</end>
+            <room>SE6-205</room>
+            <instructor>Medhat Elmasry</instructor>
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>1230</start>
+            <end>1320</end>
+            <room>SW9-206</room>
+            <instructor>Medhat Elmasry</instructor>
+            <daySlot>Tuesday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4660" name="Introduction to Business Intelligence">
+        <coBook type="Lecture">
+            
+            <start>0830</start>
+            <end>1020</end>
+            <room>SW9-206</room>
+            <instructor>Stephen Fabiszewski</instructor>
+            <daySlot>Friday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>1030</start>
+            <end>1220</end>
+            <room>SE12-306</room>
+            <instructor>Stephen Fabiszewski</instructor>
+            <daySlot>Friday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4770" name="Legal and Ethical Issues in IT">
+        <coBook type="Tutorial">
+            
+            <start>1330</start>
+            <end>1520</end>
+            <room>SE12-306</room>
+            <instructor>Trevor Lord</instructor>
+            <daySlot>Friday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4850" name="Integrative Programming and Technologies">
+        <coBook type="Lecture">
+            
+            <start>1230</start>
+            <end>1420</end>
+            <room>SW3-1750</room>
+            <instructor>James Parry</instructor>
+            <daySlot>Wednesday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>1330</start>
+            <end>1520</end>
+            <room>SE12-308</room>
+            <instructor>James Parry</instructor>
+            <daySlot>Thursday</daySlot>
+        </coBook>
+    </class>
+    <class id="ACIT4910" name="Database Backup, Recovery and Tuning">
+        <coBook type="Lecture">
+            
+            <start>1530</start>
+            <end>1620</end>
+            <room>SW9-206</room>
+            <instructor>Richard Chau</instructor>
+            <daySlot>Monday</daySlot>
+        </coBook>
+        <coBook type="Lecture">
+            
+            <start>0930</start>
+            <end>1020</end>
+            <room>SW5-1840</room>
+            <instructor>Richard Chau</instructor>
+            <daySlot>Thursday</daySlot>
+        </coBook>
+        <coBook type="Lab">
+            
+            <start>1030</start>
+            <end>1220</end>
+            <room>SE12-306</room>
+            <instructor>Richard Chau</instructor>
+            <daySlot>Thursday</daySlot>
+        </coBook>
+    </class>
+</course>
+
+<!-- 
+Term grouped by period
+-->
+<period>
+<timeslot duration="2" start="830" end="1020">
+    <peBook>
+        
+        <courseName>Enterprise Systems Admin Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Bethany Edmunds</instructor>
+        <daySlot>Tuesday</daySlot>
+            </peBook>
+             <peBook> 
+        
+        <courseName>Intro to Business Intelligence Lecture</courseName>
+        <room>SW9-206</room>
+        <instructor>Steve Fabiszewski</instructor>
+        <daySlot>Friday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="1" start="930" end="1020">
+    <peBook>
+        
+        <courseName>Database Backup, Recover, Tuning Lecture</courseName>
+        <room>SW5-1750</room>
+        <instructor>Richard Chau</instructor>
+        <daySlot>Thursday</daySlot>
+    </peBook>
+    </timeslot> 
+    
+    <timeslot duration="2" start="1030" end="1220"> 
+    <peBook> 
+        
+        <courseName>Content Management Systems Admin Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Medhat Elmasry</instructor>
+        <daySlot>Monday</daySlot>
+          </peBook>
+            <peBook>
+        
+        <courseName>Database Backup, Recover, Tuning Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Richard Chau</instructor>
+        <daySlot>Thursday</daySlot>
+          </peBook>
+            <peBook>
+        
+        <courseName>Intro to Business Intelligence Lab</courseName>
+        <room>SE12-306</room>
+        <instructor>Steve Fabiszewski</instructor>
+        <daySlot>Friday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="1" start="1230" end="1320"> 
+    <peBook>
+        
+        <courseName>Enterprise Systems Admin Lecture</courseName>
+        <room>SW1-2009</room>
+        <instructor>Bethany Edmunds</instructor>
+        <daySlot>Monday</daySlot>
+          </peBook>
+            <peBook>
+        
+        <courseName>Content Management Systems Admin Lecture</courseName>
+        <room>SW9-206</room>
+        <instructor>Medhat Elmasry</instructor>
+        <daySlot>Tuesday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="2" start="1230" end="1420"> 
+    <peBook>
+        
+        <courseName>Integrative Programming and Technologies Lecture</courseName>
+        <room>SW3-1750</room>
+        <instructor>James Parry</instructor>
+        <daySlot>Wednesday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="2" start="1330" end="1520"> 
+    <peBook> 
+        
+        <courseName>Integrative Programming and Technologies Lab</courseName>
+        <room>SE12-308</room>
+        <instructor>James Parry</instructor>
+        <daySlot>Thursday</daySlot>
+      </peBook>
+        <peBook>
+        
+        <courseName>Legal and Ethical Issues in IT</courseName>
+        <room>SE12-306</room>
+        <instructor>Trevor Lord</instructor>
+        <daySlot>Friday</daySlot>
+    </peBook>
+    </timeslot>
+    
+    <timeslot duration="1" start="1530" end="1620"> 
+    <peBook>
+        
+        <courseName>Database Backup, Recovery, Tuning Lecture</courseName>
+        <room>SW9-206</room>
+        <instructor>Richard Chau</instructor>
+        <daySlot>Monday</daySlot>
+      </peBook>
+        <peBook>
+        
+        <courseName>Enterprise Systems Admin Lecture</courseName>
+        <room>SW3-3615</room>
+        <instructor>Bethany Edmunds</instructor>
+        <daySlot>Tuesday</daySlot>
+    </peBook>
+    </timeslot>
+    <timeslot duration="1" start="1630" end="1720"> 
+    <peBook>
+        
+        <courseName>Content Management Systems Admin Lecture</courseName>
+        <room>SE6-205</room>
+        <instructor>Medhat Elmasry</instructor>
+        <daySlot>Monday</daySlot>
+    </peBook>
+    </timeslot>    
+</period>
+
+</Term>
