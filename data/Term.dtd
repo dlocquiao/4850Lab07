@@ -19,7 +19,7 @@ Derrick
 
 <!-- The term defines the dayOfWeek, period, course  -->
 <!-- **DayOfWeek   -->
-<!ELEMENT WinterTerm (dayOfWeek, period, course)>
+<!ELEMENT Term (dayOfWeek, period, course)>
 <!-- Days for classes are only monday, tuesday, wednesday, thursday, or friday -->
 <!ELEMENT dayOfWeek (day)*>
 <!-- each day contains a booked spot for a certain course -->
