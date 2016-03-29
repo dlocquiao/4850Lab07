@@ -9,8 +9,11 @@ Schema for the Winter Term
 </xs:schema>
 
 
+    <!-- *******Common Data Types******* -->
 
-    <xs:simpleType name="dayCodeType">
+    <!-- Day type is used to indicate which days are valid 
+         from monday to friday -->
+    <xs:simpleType name="daySlotTy">
         <xs:restriction base="xs:string">
             <xs:enumeration value="mon"/>
             <xs:enumeration value="tues"/>
@@ -20,4 +23,167 @@ Schema for the Winter Term
         </xs:restriction>
     </xs:simpleType>
     
-   
+    <!-- 4 digit time -->
+    <xs:simpleType name="periodTy">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-2][0-9][0-5][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- start time of class period -->
+   <xs:simpleType name="startTy">
+        <xs:restriction base="timeTy">
+            <xs:enumeration value="0830"/>
+            <xs:enumeration value="0930"/>
+            <xs:enumeration value="1030"/>
+            <xs:enumeration value="1130"/>
+            <xs:enumeration value="1230"/>
+            <xs:enumeration value="1330"/>
+            <xs:enumeration value="1430"/>
+            <xs:enumeration value="1530"/>
+            <xs:enumeration value="1630"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- end time of class period -->
+    <xs:simpleType name="endTy">
+        <xs:restriction base="timeTy">
+            <xs:enumeration value="0920"/>
+            <xs:enumeration value="1020"/>
+            <xs:enumeration value="1120"/>
+            <xs:enumeration value="1220"/>
+            <xs:enumeration value="1320"/>
+            <xs:enumeration value="1420"/>
+            <xs:enumeration value="1520"/>
+            <xs:enumeration value="1620"/>
+            <xs:enumeration value="1720"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Course id: 4 uppercase and 4 numbers -->
+    <xs:simpleType name="courseTy">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{4}[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- what type of class -->
+    <xs:simpleType name="typeTy">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Tutorial"/>
+            <xs:enumeration value="Lab"/>
+            <xs:enumeration value="Lecture"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- defines the name of the course -->
+    <xs:simpleType name="courseNameTy">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- defines the name of the instructor teaching that class -->
+    <xs:simpleType name="instructorTy">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- list the rooms in this order eg:SE12-306 -->
+    <xs:simpleType name="roomTy">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}\d{1,2}-\d{3,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    
+    <!-- *******Structural Elements******* -->
+  
+    <!-- Term is the root element which contains all three of these -->
+    <xs:element name="Term">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dayOfWeek" type="daysType"/>
+                <xs:element name="period" type="periodsType"/>
+                <xs:element name="course" type="coursesType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- dayOfWeek is the root of day, which contains weekdays-->
+    <xs:complexType name="daysType">
+        <xs:sequence>
+            <xs:element name="day" type="dayType" micOccurs="0" maxOccurs="5"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- period is the root of timslot, which contains duration, start and end -->
+    <xs:complexType name="periodsType">
+        <xs:sequence>
+            <xs:element name="timeslot" type="periodType" minOccurs="0" maxOccurs="9"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- course is the root of class, which contains the name and id. -->
+    <xs:complexType name="coursesType">
+        <xs:sequence>
+            <xs:element name="class" type="courseType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- day is the root of daBook, which is booking by days -->
+    <xs:complexType name="dayType">
+        <xs:sequence>
+            <xs:element name="daBook" type="dayType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="start" type="startTy" use="required"/>
+        <xs:attribute name="end" type="endTy" use="required"/>
+    </xs:complexType>
+    
+    <!-- timeslot is the root of peBook, which is booking by periods -->
+    <xs:complexType name="periodType">
+        <xs:sequence>
+            <xs:element name="peBook" type="dayType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- class is the root of coBook, which is booking by courses -->
+    <xs:complexType name="courseType">
+        <xs:sequence>
+            <xs:element name="coBook" type="dayType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="start" type="startTy" use="required"/>
+        <xs:attribute name="end" type="endTy" use="required"/>
+    </xs:complexType>
+    
+    <!-- daBook will contain start time, end time, courseName, room and instructor -->
+    <xs:complexType name="daBook">
+        <xs:sequence>
+            <xs:element name="start" type="startTy" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="end" type="endTy" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="courseName" type="courseName" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="room" type="roomTy" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="instructor" type="instructorTy" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- peBook will contain courseName, room, instructor and dayslot -->
+    <xs:complexType name="peBook">
+        <xs:sequence>
+            <xs:element name="courseName" type="courseName" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="room" type="roomTy" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="instructor" type="instructorTy" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="daySlot" type="daySlotTy" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- coBook will contain start time, end time, room, instructor and dayslot -->
+    <xs:complexType name="coBook">
+        <xs:sequence>
+            <xs:element name="start" type="startTy" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="end" type="endTy" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="room" type="roomTy" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="instructor" type="instructorTy" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="daySlot" type="daySlotTy" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
